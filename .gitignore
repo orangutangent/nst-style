@@ -14,8 +14,4 @@ build/
 *.pt
 *.h5
 .DS_Store
-assets/*.jpg
-assets/*.png
-assets/*.webp
-!assets/.gitkeep
 
