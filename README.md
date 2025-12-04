@@ -2,6 +2,27 @@
 
 Project for transferring style from one image to another using neural networks.
 
+## Examples
+
+Here are example results from the project:
+
+<table>
+<tr>
+<td align="center"><b>Content Image</b></td>
+<td align="center"></td>
+<td align="center"><b>Style Image</b></td>
+<td align="center"></td>
+<td align="center"><b>Result</b></td>
+</tr>
+<tr>
+<td><img src="assets/content2.jpg" width="300"></td>
+<td align="center" style="font-size: 48px; font-weight: bold;">+</td>
+<td><img src="assets/style4.webp" width="300"></td>
+<td align="center" style="font-size: 48px; font-weight: bold;">=</td>
+<td><img src="assets/output.jpg" width="300"></td>
+</tr>
+</table>
+
 ## Setup
 
 ### Prerequisites
