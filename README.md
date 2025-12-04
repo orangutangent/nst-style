@@ -77,18 +77,50 @@ deactivate
 
 ## Usage
 
-1. Place images in the `assets/` folder:
+### Command Line Interface (CLI)
 
-   - `content2.jpg` - content image
-   - `style4.webp` - style image
+The easiest way to use the project is through the command line interface:
 
-2. Run the script:
+**Basic usage:**
 
 ```bash
-python main.py
+python main.py --content content.jpg --style style.jpg
 ```
 
-Result will be saved to `assets/output.jpg`.
+**With all options:**
+
+```bash
+python main.py \
+  --content assets/content2.jpg \
+  --style assets/style4.webp \
+  --output result.jpg \
+  --size 512 \
+  --steps 300 \
+  --style-weight 1000000 \
+  --content-weight 1
+```
+
+**Short form:**
+
+```bash
+python main.py -c content.jpg -s style.jpg -o output.jpg
+```
+
+**Get help:**
+
+```bash
+python main.py --help
+```
+
+### CLI Arguments
+
+- `--content`, `-c`: Path to content image (required)
+- `--style`, `-s`: Path to style image (required)
+- `--output`, `-o`: Path to save output image (default: `output.jpg`)
+- `--size`: Output image size (default: `512`)
+- `--steps`: Number of optimization steps (default: `300`)
+- `--style-weight`: Style loss weight (default: `1000000`)
+- `--content-weight`: Content loss weight (default: `1`)
 
 ## Using stylize_image function
 
