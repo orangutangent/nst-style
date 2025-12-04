@@ -21,6 +21,20 @@ Here are example results from the project:
 <td align="center" style="font-size: 48px; font-weight: bold;">=</td>
 <td><img src="assets/output.jpg" width="300"></td>
 </tr>
+<tr>
+<tr>
+<td><img src="assets/content4.jpeg" width="300"></td>
+<td align="center" style="font-size: 48px; font-weight: bold;">+</td>
+<td><img src="assets/style5.jpg" width="300"></td>
+<td align="center" style="font-size: 48px; font-weight: bold;">=</td>
+<td><img src="assets/output3.jpg" width="300"></td>
+</tr>
+<td><img src="assets/content3.jpg" width="300"></td>
+<td align="center" style="font-size: 48px; font-weight: bold;">+</td>
+<td><img src="assets/style4.webp" width="300"></td>
+<td align="center" style="font-size: 48px; font-weight: bold;">=</td>
+<td><img src="assets/output2.jpg" width="300"></td>
+</tr>
 </table>
 
 ## Setup
