@@ -48,13 +48,19 @@ def stylize_image(content_path, style_path,
     # Load images
     print(f"Loading content image from: {content_path}")
     content_img = image_loader(content_path)
+    print(f"Content image shape: {content_img.shape}")
 
     print(f"Loading style image from: {style_path}")
     style_img = image_loader(style_path)
+    print(f"Style image shape: {style_img.shape}")
 
     # Check that sizes match
-    assert style_img.size() == content_img.size(), \
-        "Style and content images must have the same size"
+    if style_img.size() != content_img.size():
+        raise ValueError(
+            f"Style and content images must have the same size. "
+            f"Content image size: {content_img.size()}, "
+            f"Style image size: {style_img.size()}"
+        )
 
     # Initialize input image as copy of content
     input_img = content_img.clone()

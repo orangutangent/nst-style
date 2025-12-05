@@ -45,6 +45,9 @@ def get_image_loader(imsize, device):
 
     def image_loader(image_name):
         image = Image.open(image_name)
+        # Convert to RGB if necessary (handles RGBA, P, etc.)
+        if image.mode != 'RGB':
+            image = image.convert('RGB')
         image = loader(image).unsqueeze(0)
         return image.to(device, torch.float)
 
